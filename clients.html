@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Tech Solutions - Our Clients</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6;">
+    <!-- Navigation Bar -->
+    <nav id="navbar" style="background-color: #333; position: fixed; width: 100%; top: 0; z-index: 1000;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div style="color: white; font-size: 24px; font-weight: bold;">D-Tech</div>
+            <div id="menu-toggle" style="display: none; color: white; font-size: 24px; cursor: pointer;">☰</div>
+            <ul id="nav-links" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 2rem;">
+                <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
+                <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+                <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                <li><a href="clients.html" style="color: white; text-decoration: none;">Client</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="padding: 120px 1rem 3rem 1rem; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/400'); background-size: cover; color: white; text-align: center;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Our Success Stories</h1>
+        <p style="font-size: 1.2rem;">Discover how we've helped businesses transform and grow</p>
+    </section>
+
+    <!-- Featured Case Studies -->
+    <section style="padding: 5rem 1rem; background-color: #f8f9fa;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Featured Case Studies</h2>
+            
+            <!-- Case Study 1 -->
+            <div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem;">
+                    <img src="images/IMG-20241031-WA0024.jpg" alt="Case Study 1" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <h3 style="color: #007bff; margin-bottom: 1rem;">Global Tech Solutions</h3>
+                        <p style="color: #666; margin-bottom: 1rem;">Industry: Technology</p>
+                        <p style="margin-bottom: 1rem;">Implemented a comprehensive digital transformation strategy that resulted in 40% increase in operational efficiency.</p>
+                        <button onclick="openPopup('case-study-1')" style="background-color: #007bff; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div style="background: white; border-radius: 8px; overflow: hidden; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem;">
+                    <img src="images/IMG-20241031-WA0025.jpg" alt="Case Study 2" style="width: 100%; height: 100%; object-fit: cover;">
+                    <div style="padding: 2rem;">
+                        <h3 style="color: #007bff; margin-bottom: 1rem;">FinanceHub Inc.</h3>
+                        <p style="color: #666; margin-bottom: 1rem;">Industry: Financial Services</p>
+                        <p style="margin-bottom: 1rem;">Developed a secure cloud infrastructure that reduced operational costs by 30% while improving data security.</p>
+                        <button onclick="openPopup('case-study-2')" style="background-color: #007bff; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer;">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div id="case-study-1-popup" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.4);">
+        <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%;">
+            <span style="color: #aaa; float: right; font-size: 28px; font-weight: bold;" onclick="closePopup('case-study-1')">&times;</span>
+            <h2>Global Tech Solutions</h2>
+            <p>Implemented a comprehensive digital transformation strategy that resulted in 40% increase in operational efficiency.</p>
+            <!-- Add more detailed case study content here -->
+        </div>
+    </div>
+
+    <div id="case-study-2-popup" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0, 0, 0, 0.4);">
+        <div style="background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%;">
+            <span style="color: #aaa; float: right; font-size: 28px; font-weight: bold;" onclick="closePopup('case-study-2')">&times;</span>
+            <h2>FinanceHub Inc.</h2>
+            <p>Developed a secure cloud infrastructure that reduced operational costs by 30% while improving data security.</p>
+            <!-- Add more detailed case study content here -->
+        </div>
+    </div>
+
+    <!-- Client Testimonials -->
+    <section style="padding: 5rem 1rem; background-color: white;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Client Testimonials</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Testimonial 1 -->
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <img src="images/IMG-20241031-WA0026.jpg" alt="Client 1" style="border-radius: 50%; margin-bottom: 1rem; width: 200px;">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"D-Tech's innovative solutions have transformed our business operations, leading to significant improvements in efficiency and customer satisfaction."</p>
+                    <h4 style="color: #007bff;">John Smith</h4>
+                    <p style="color: #666;">CEO, TechCorp</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <img src="images/IMG-20241031-WA0028.jpg" alt="Client 2" style="border-radius: 50%; margin-bottom: 1rem; width: 200px;">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"Working with D-Tech has been a game-changer for our company. Their expertise and dedication to excellence are unmatched."</p>
+                    <h4 style="color: #007bff;">Sarah Johnson</h4>
+                    <p style="color: #666;">CTO, InnovateTech</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 8px; text-align: center;">
+                    <img src="images/IMG-20241031-WA0027.jpg" alt="Client 3" style="border-radius: 50%; margin-bottom: 1rem; width: 200px;">
+                    <p style="font-style: italic; margin-bottom: 1rem;">"The team at D-Tech consistently delivers outstanding results. Their solutions have helped us stay ahead in a competitive market."</p>
+                    <h4 style="color: #007bff;">Michael Chen</h4>
+                    <p style="color: #666;">COO, GlobalTech</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section style="padding: 5rem 1rem; background-color: #f8f9fa;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Trusted By</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; align-items: center;">
+                <img src="images/IMG-20241031-WA0031.jpg" alt="Client Logo 1" style="width: 100%; filter: grayscale(100%);">
+                <img src="images/IMG-20241031-WA0030.jpg" alt="Client Logo 2" style="width: 100%; filter: grayscale(100%);">
+                <img src="images/IMG-20241031-WA0033.jpg" alt="Client Logo 3" style="width: 100%; filter: grayscale(100%);">
+                <img src="images/IMG-20241031-WA0034.jpg" alt="Client Logo 4" style="width: 100%; filter: grayscale(100%);">
+                <img src="images/IMG-20241031-WA0035.jpg" alt="Client Logo 5" style="width: 100%; filter: grayscale(100%);">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 5rem 1rem; background-color: #007bff; color: white; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="margin-bottom: 1rem;">Ready to Transform Your Business?</h2>
+            <p style="margin-bottom: 2rem;">Join our growing list of satisfied clients and experience the D-Tech difference.</p>
+            <a href="contact.html" style="background-color: white; color: #007bff; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; display: inline-block; font-weight: bold;">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 2rem 1rem; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="margin-bottom: 1rem;">
+                <a href="#" style="color: white; margin: 0 1rem;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: white; margin: 0 1rem;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: white; margin: 0 1rem;"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p style="margin: 0;">&copy; 2024 D-Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openPopup(popupId) {
+            document.getElementById(popupId + "-popup").style.display = "block";
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId + "-popup").style.display = "none";
+        }
+
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.backgroundColor = '#333';
+                navLinks.style.padding = '1rem';
+            } else {
+                navLinks.style.display = 'none';
+            }
+        });
+
+        // Responsive navigation
+        window.addEventListener('resize', function() {
+            const navLinks = document.getElementById('nav-links');
+            const menuToggle = document.getElementById('menu-toggle');
+            if (window.innerWidth <= 768) {
+                menuToggle.style.display = 'block';
+                navLinks.style.display = 'none';
+            } else {
+                menuToggle.style.display = 'none';
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'row';
+                navLinks.style.position = 'static';
+                navLinks.style.padding = '0';
+            }
+        });
+
+        // Initialize responsive nav on load
+        window.dispatchEvent(new Event('resize'));
+    </script>
+</body>
+</html>

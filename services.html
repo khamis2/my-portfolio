@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-Tech Solutions - Services</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; line-height: 1.6;">
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav id="navbar" style="background-color: #333; position: fixed; width: 100%; top: 0; z-index: 1000;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div style="color: white; font-size: 24px; font-weight: bold;">D-Tech</div>
+            <div id="menu-toggle" style="display: none; color: white; font-size: 24px; cursor: pointer;">☰</div>
+            <ul id="nav-links" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 2rem;">
+                <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
+                <li><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+                <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
+                <li><a href="clients.html" style="color: white; text-decoration: none;">Clients</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Services Header -->
+    <header style="background-color: #007bff; color: white; padding: 8rem 1rem 4rem 1rem; text-align: center;">
+        <h1 style="margin-bottom: 1rem;">Our Services</h1>
+        <p style="font-size: 1.2rem;">Comprehensive Solutions for Your Business Needs</p>
+    </header>
+
+    <!-- Services Section -->
+    <section style="padding: 5rem 1rem; background-color: #f8f9fa;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <!-- Consulting Service -->
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <i class="fas fa-laptop-code" style="font-size: 2.5rem; color: #007bff; margin-bottom: 1rem;"></i>
+                    <h3>Technology Consulting</h3>
+                    <p style="margin-bottom: 1rem;">Expert guidance for digital transformation and technology implementation.</p>
+                    <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Strategic Planning</li>
+                        <li>Technology Assessment</li>
+                        <li>Implementation Support</li>
+                        <li>Process Optimization</li>
+                    </ul>
+                    <button onclick="location.href='contact.html'" style="background-color: #007bff; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer;">Get Started</button>
+                </div>
+
+                <!-- Premium Services -->
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <i class="fas fa-crown" style="font-size: 2.5rem; color: #007bff; margin-bottom: 1rem;"></i>
+                    <h3>Premium Solutions</h3>
+                    <p style="margin-bottom: 1rem;">Advanced enterprise-level solutions tailored to your specific needs.</p>
+                    <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Custom Development</li>
+                        <li>Enterprise Integration</li>
+                        <li>Security Solutions</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <button onclick="location.href='contact.html'" style="background-color: #007bff; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer;">Learn More</button>
+                </div>
+
+                <!-- Affiliate Marketing -->
+                <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                    <i class="fas fa-handshake" style="font-size: 2.5rem; color: #007bff; margin-bottom: 1rem;"></i>
+                    <h3>Affiliate Marketing</h3>
+                    <p style="margin-bottom: 1rem;">Strategic partnership opportunities for business growth and expansion.</p>
+                    <ul style="padding-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Partner Programs</li>
+                        <li>Revenue Sharing</li>
+                        <li>Marketing Support</li>
+                        <li>Growth Strategy</li>
+                    </ul>
+                    <button onclick="location.href='contact.html'" style="background-color: #007bff; color: white; padding: 0.8rem 1.5rem; border: none; border-radius: 5px; cursor: pointer;">Join Program</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer style="background-color: #333; color: white; padding: 2rem 1rem; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <div style="margin-bottom: 1rem;">
+                <a href="#" style="color: white; margin: 0 1rem;"><i class="fab fa-facebook"></i></a>
+                <a href="#" style="color: white; margin: 0 1rem;"><i class="fab fa-twitter"></i></a>
+                <a href="#" style="color: white; margin: 0 1rem;"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2024 D-Tech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle (Same as index.html)
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.backgroundColor = '#333';
+                navLinks.style.padding = '1rem';
+            } else {
+                navLinks.style.display = 'none';
+            }
+        });
+
+        // Responsive navigation (Same as index.html)
+        window.addEventListener('resize', function() {
+            const navLinks = document.getElementById('nav-links');
+            const menuToggle = document.getElementById('menu-toggle');
+            if (window.innerWidth <= 768) {
+                menuToggle.style.display = 'block';
+                navLinks.style.display = 'none';
+            } else {
+                menuToggle.style.display = 'none';
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'row';
+                navLinks.style.position = 'static';
+                navLinks.style.padding = '0';
+            }
+        });
+
+        // Initialize responsive nav on load
+        window.dispatchEvent(new Event('resize'));
+    </script>
+</body>
+</html>
